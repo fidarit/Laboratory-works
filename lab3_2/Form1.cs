@@ -10,22 +10,22 @@ namespace lab3_2
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void clearButton_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void computeButton_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
 
             int a, b;
-            a = hScrollBar1.Value;
-            b = trackBar1.Value;
+            a = aInput.Value;
+            b = bInput.Value;
 
             double x, y, h;
             bool finished = false;
-            h = (double)numericUpDown1.Value;
+            h = (double)hInput.Value;
             x = a;
 
             do
@@ -44,14 +44,14 @@ namespace lab3_2
             while (x <= b);
         }
 
-        private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        private void aInput_Scroll(object sender, ScrollEventArgs e)
         {
-            a_label.Text = "a = " + hScrollBar1.Value.ToString();
+            aOutput.Text = "a = " + aInput.Value.ToString();
         }
 
-        private void trackBar1_Scroll(object sender, EventArgs e)
+        private void bInput_Scroll(object sender, EventArgs e)
         {
-            b_label.Text = "b = " + trackBar1.Value.ToString();
+            bOutput.Text = "b = " + bInput.Value.ToString();
         }
     }
 }

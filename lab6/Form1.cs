@@ -15,7 +15,7 @@ namespace lab6
         }
 
         //Заполнение массива
-        private void button1_Click(object sender, EventArgs e)
+        private void generateButton_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
             Random rand = new Random();
@@ -27,7 +27,7 @@ namespace lab6
         }
 
         //Замена
-        private void button2_Click(object sender, EventArgs e)
+        private void replaceButton_Click(object sender, EventArgs e)
         {
             int min = 0;
             listBox2.Items.Clear();

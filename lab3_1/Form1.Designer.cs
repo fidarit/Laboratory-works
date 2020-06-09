@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.abInput = new System.Windows.Forms.TextBox();
+            this.adInput = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.resultLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // abInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(222, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 20);
-            this.textBox1.TabIndex = 0;
+            this.abInput.Location = new System.Drawing.Point(222, 12);
+            this.abInput.Name = "abInput";
+            this.abInput.Size = new System.Drawing.Size(125, 20);
+            this.abInput.TabIndex = 0;
             // 
-            // textBox2
+            // adInput
             // 
-            this.textBox2.Location = new System.Drawing.Point(223, 38);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(124, 20);
-            this.textBox2.TabIndex = 1;
+            this.adInput.Location = new System.Drawing.Point(223, 38);
+            this.adInput.Name = "adInput";
+            this.adInput.Size = new System.Drawing.Size(124, 20);
+            this.adInput.TabIndex = 1;
             // 
             // label1
             // 
@@ -83,12 +83,12 @@
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(187, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(16, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "...";
+            this.resultLabel.AutoSize = true;
+            this.resultLabel.Location = new System.Drawing.Point(187, 102);
+            this.resultLabel.Name = "label3";
+            this.resultLabel.Size = new System.Drawing.Size(16, 13);
+            this.resultLabel.TabIndex = 5;
+            this.resultLabel.Text = "...";
             // 
             // pictureBox1
             // 
@@ -118,12 +118,12 @@
             this.ClientSize = new System.Drawing.Size(353, 180);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.resultLabel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.adInput);
+            this.Controls.Add(this.abInput);
             this.Name = "Form1";
             this.Text = "Лаб №3_1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -134,12 +134,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox abInput;
+        private System.Windows.Forms.TextBox adInput;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label resultLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
     }

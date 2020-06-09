@@ -125,7 +125,7 @@
             this.computeButton.TabIndex = 7;
             this.computeButton.Text = "Расчёт";
             this.computeButton.UseVisualStyleBackColor = true;
-            this.computeButton.Click += new System.EventHandler(this.button1_Click);
+            this.computeButton.Click += new System.EventHandler(this.computeButton_Click);
             // 
             // Form1
             // 

@@ -11,7 +11,7 @@ namespace lab8
         }
         
         //Кнопка "Расчёт"
-        private void button1_Click(object sender, EventArgs e)
+        private void computeButton_Click(object sender, EventArgs e)
         {
             chart1.Series[0].Points.Clear();
 

@@ -20,7 +20,7 @@ namespace lab7
         }
 
         //Заполнить
-        private void button1_Click(object sender, EventArgs e)
+        private void generateButton_Click(object sender, EventArgs e)
         {
             Random rand = new Random();
 
@@ -35,7 +35,7 @@ namespace lab7
         }
 
         //Замена
-        private void button2_Click(object sender, EventArgs e)
+        private void replaceButton_Click(object sender, EventArgs e)
         {
             //Нахождение суммы
             int sum = 0;

@@ -32,16 +32,16 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.a_label = new System.Windows.Forms.Label();
-            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.b_label = new System.Windows.Forms.Label();
+            this.aOutput = new System.Windows.Forms.Label();
+            this.aInput = new System.Windows.Forms.HScrollBar();
+            this.bInput = new System.Windows.Forms.TrackBar();
+            this.bOutput = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.hInput = new System.Windows.Forms.NumericUpDown();
+            this.computeButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.bInput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hInput)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -81,45 +81,45 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Y";
             // 
-            // a_label
+            // aOutput
             // 
-            this.a_label.AutoSize = true;
-            this.a_label.Location = new System.Drawing.Point(261, 79);
-            this.a_label.Name = "a_label";
-            this.a_label.Size = new System.Drawing.Size(31, 13);
-            this.a_label.TabIndex = 4;
-            this.a_label.Text = "a = 5";
+            this.aOutput.AutoSize = true;
+            this.aOutput.Location = new System.Drawing.Point(261, 79);
+            this.aOutput.Name = "aOutput";
+            this.aOutput.Size = new System.Drawing.Size(31, 13);
+            this.aOutput.TabIndex = 4;
+            this.aOutput.Text = "a = 5";
             // 
-            // hScrollBar1
+            // aInput
             // 
-            this.hScrollBar1.LargeChange = 1;
-            this.hScrollBar1.Location = new System.Drawing.Point(264, 53);
-            this.hScrollBar1.Maximum = 15;
-            this.hScrollBar1.Name = "hScrollBar1";
-            this.hScrollBar1.Size = new System.Drawing.Size(199, 17);
-            this.hScrollBar1.TabIndex = 5;
-            this.hScrollBar1.Value = 5;
-            this.hScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar1_Scroll);
+            this.aInput.LargeChange = 1;
+            this.aInput.Location = new System.Drawing.Point(264, 53);
+            this.aInput.Maximum = 15;
+            this.aInput.Name = "aInput";
+            this.aInput.Size = new System.Drawing.Size(199, 17);
+            this.aInput.TabIndex = 5;
+            this.aInput.Value = 5;
+            this.aInput.Scroll += new System.Windows.Forms.ScrollEventHandler(this.aInput_Scroll);
             // 
-            // trackBar1
+            // bInput
             // 
-            this.trackBar1.Location = new System.Drawing.Point(264, 136);
-            this.trackBar1.Maximum = 30;
-            this.trackBar1.Minimum = 15;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(196, 45);
-            this.trackBar1.TabIndex = 6;
-            this.trackBar1.Value = 25;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            this.bInput.Location = new System.Drawing.Point(264, 136);
+            this.bInput.Maximum = 30;
+            this.bInput.Minimum = 15;
+            this.bInput.Name = "bInput";
+            this.bInput.Size = new System.Drawing.Size(196, 45);
+            this.bInput.TabIndex = 6;
+            this.bInput.Value = 25;
+            this.bInput.Scroll += new System.EventHandler(this.bInput_Scroll);
             // 
-            // b_label
+            // bOutput
             // 
-            this.b_label.AutoSize = true;
-            this.b_label.Location = new System.Drawing.Point(261, 184);
-            this.b_label.Name = "b_label";
-            this.b_label.Size = new System.Drawing.Size(37, 13);
-            this.b_label.TabIndex = 7;
-            this.b_label.Text = "b = 25";
+            this.bOutput.AutoSize = true;
+            this.bOutput.Location = new System.Drawing.Point(261, 184);
+            this.bOutput.Name = "bOutput";
+            this.bOutput.Size = new System.Drawing.Size(37, 13);
+            this.bOutput.TabIndex = 7;
+            this.bOutput.Text = "b = 25";
             // 
             // label6
             // 
@@ -130,70 +130,70 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "h = ";
             // 
-            // numericUpDown1
+            // hInput
             // 
-            this.numericUpDown1.DecimalPlaces = 1;
-            this.numericUpDown1.Increment = new decimal(new int[] {
+            this.hInput.DecimalPlaces = 1;
+            this.hInput.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.numericUpDown1.Location = new System.Drawing.Point(295, 217);
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.hInput.Location = new System.Drawing.Point(295, 217);
+            this.hInput.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 9;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.hInput.Name = "hInput";
+            this.hInput.Size = new System.Drawing.Size(120, 20);
+            this.hInput.TabIndex = 9;
+            this.hInput.Value = new decimal(new int[] {
             5,
             0,
             0,
             65536});
             // 
-            // button1
+            // computeButton
             // 
-            this.button1.Location = new System.Drawing.Point(267, 303);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Построить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.computeButton.Location = new System.Drawing.Point(267, 303);
+            this.computeButton.Name = "computeButton";
+            this.computeButton.Size = new System.Drawing.Size(75, 23);
+            this.computeButton.TabIndex = 10;
+            this.computeButton.Text = "Построить";
+            this.computeButton.UseVisualStyleBackColor = true;
+            this.computeButton.Click += new System.EventHandler(this.computeButton_Click);
             // 
-            // button2
+            // clearButton
             // 
-            this.button2.Location = new System.Drawing.Point(385, 303);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Очистить";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.clearButton.Location = new System.Drawing.Point(385, 303);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(75, 23);
+            this.clearButton.TabIndex = 11;
+            this.clearButton.Text = "Очистить";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(472, 338);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.clearButton);
+            this.Controls.Add(this.computeButton);
+            this.Controls.Add(this.hInput);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.b_label);
-            this.Controls.Add(this.trackBar1);
-            this.Controls.Add(this.hScrollBar1);
-            this.Controls.Add(this.a_label);
+            this.Controls.Add(this.bOutput);
+            this.Controls.Add(this.bInput);
+            this.Controls.Add(this.aInput);
+            this.Controls.Add(this.aOutput);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = " Лаб №3_2";
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bInput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hInput)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,14 +205,14 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label a_label;
-        private System.Windows.Forms.HScrollBar hScrollBar1;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.Label b_label;
+        private System.Windows.Forms.Label aOutput;
+        private System.Windows.Forms.HScrollBar aInput;
+        private System.Windows.Forms.TrackBar bInput;
+        private System.Windows.Forms.Label bOutput;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.NumericUpDown hInput;
+        private System.Windows.Forms.Button computeButton;
+        private System.Windows.Forms.Button clearButton;
     }
 }
 
