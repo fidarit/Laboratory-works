@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button_checkBox = new System.Windows.Forms.CheckBox();
-            this.panel_checkBox = new System.Windows.Forms.CheckBox();
-            this.label_checkBox = new System.Windows.Forms.CheckBox();
-            this.edit_checkBox = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.button2 = new System.Windows.Forms.Button();
             this.result_label1 = new System.Windows.Forms.Label();
+            this.checkButton1 = new System.Windows.Forms.Button();
+            this.edit_checkBox = new System.Windows.Forms.CheckBox();
+            this.label_checkBox = new System.Windows.Forms.CheckBox();
+            this.panel_checkBox = new System.Windows.Forms.CheckBox();
+            this.button_checkBox = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.result_label2 = new System.Windows.Forms.Label();
+            this.checkButton2 = new System.Windows.Forms.Button();
+            this.method_radioButton = new System.Windows.Forms.RadioButton();
+            this.event_radioButton = new System.Windows.Forms.RadioButton();
+            this.response_radioButton = new System.Windows.Forms.RadioButton();
+            this.property_radioButton = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.result_label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.checkButton3 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -57,7 +57,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.result_label1);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.checkButton1);
             this.groupBox1.Controls.Add(this.edit_checkBox);
             this.groupBox1.Controls.Add(this.label_checkBox);
             this.groupBox1.Controls.Add(this.panel_checkBox);
@@ -70,44 +70,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Вопрос №1";
             // 
-            // label1
+            // result_label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(280, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Для вывода данных в Delphi используются элементы";
+            this.result_label1.AutoSize = true;
+            this.result_label1.Location = new System.Drawing.Point(223, 72);
+            this.result_label1.Name = "result_label1";
+            this.result_label1.Size = new System.Drawing.Size(0, 13);
+            this.result_label1.TabIndex = 6;
             // 
-            // button_checkBox
+            // checkButton1
             // 
-            this.button_checkBox.AutoSize = true;
-            this.button_checkBox.Location = new System.Drawing.Point(10, 43);
-            this.button_checkBox.Name = "button_checkBox";
-            this.button_checkBox.Size = new System.Drawing.Size(57, 17);
-            this.button_checkBox.TabIndex = 1;
-            this.button_checkBox.Text = "Button";
-            this.button_checkBox.UseVisualStyleBackColor = true;
-            // 
-            // panel_checkBox
-            // 
-            this.panel_checkBox.AutoSize = true;
-            this.panel_checkBox.Location = new System.Drawing.Point(10, 68);
-            this.panel_checkBox.Name = "panel_checkBox";
-            this.panel_checkBox.Size = new System.Drawing.Size(53, 17);
-            this.panel_checkBox.TabIndex = 2;
-            this.panel_checkBox.Text = "Panel";
-            this.panel_checkBox.UseVisualStyleBackColor = true;
-            // 
-            // label_checkBox
-            // 
-            this.label_checkBox.AutoSize = true;
-            this.label_checkBox.Location = new System.Drawing.Point(117, 43);
-            this.label_checkBox.Name = "label_checkBox";
-            this.label_checkBox.Size = new System.Drawing.Size(52, 17);
-            this.label_checkBox.TabIndex = 3;
-            this.label_checkBox.Text = "Label";
-            this.label_checkBox.UseVisualStyleBackColor = true;
+            this.checkButton1.Location = new System.Drawing.Point(223, 39);
+            this.checkButton1.Name = "checkButton1";
+            this.checkButton1.Size = new System.Drawing.Size(100, 23);
+            this.checkButton1.TabIndex = 5;
+            this.checkButton1.Text = "Проверить";
+            this.checkButton1.UseVisualStyleBackColor = true;
+            this.checkButton1.Click += new System.EventHandler(this.checkButton1_Click);
             // 
             // edit_checkBox
             // 
@@ -119,24 +98,53 @@
             this.edit_checkBox.Text = "Edit";
             this.edit_checkBox.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // label_checkBox
             // 
-            this.button1.Location = new System.Drawing.Point(223, 39);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Проверить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label_checkBox.AutoSize = true;
+            this.label_checkBox.Location = new System.Drawing.Point(117, 43);
+            this.label_checkBox.Name = "label_checkBox";
+            this.label_checkBox.Size = new System.Drawing.Size(52, 17);
+            this.label_checkBox.TabIndex = 3;
+            this.label_checkBox.Text = "Label";
+            this.label_checkBox.UseVisualStyleBackColor = true;
+            // 
+            // panel_checkBox
+            // 
+            this.panel_checkBox.AutoSize = true;
+            this.panel_checkBox.Location = new System.Drawing.Point(10, 68);
+            this.panel_checkBox.Name = "panel_checkBox";
+            this.panel_checkBox.Size = new System.Drawing.Size(53, 17);
+            this.panel_checkBox.TabIndex = 2;
+            this.panel_checkBox.Text = "Panel";
+            this.panel_checkBox.UseVisualStyleBackColor = true;
+            // 
+            // button_checkBox
+            // 
+            this.button_checkBox.AutoSize = true;
+            this.button_checkBox.Location = new System.Drawing.Point(10, 43);
+            this.button_checkBox.Name = "button_checkBox";
+            this.button_checkBox.Size = new System.Drawing.Size(57, 17);
+            this.button_checkBox.TabIndex = 1;
+            this.button_checkBox.Text = "Button";
+            this.button_checkBox.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(280, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Для вывода данных в Delphi используются элементы";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.result_label2);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.radioButton4);
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Controls.Add(this.checkButton2);
+            this.groupBox2.Controls.Add(this.method_radioButton);
+            this.groupBox2.Controls.Add(this.event_radioButton);
+            this.groupBox2.Controls.Add(this.response_radioButton);
+            this.groupBox2.Controls.Add(this.property_radioButton);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Location = new System.Drawing.Point(13, 110);
             this.groupBox2.Name = "groupBox2";
@@ -144,6 +152,68 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Вопрос №2";
+            // 
+            // result_label2
+            // 
+            this.result_label2.AutoSize = true;
+            this.result_label2.Location = new System.Drawing.Point(222, 48);
+            this.result_label2.Name = "result_label2";
+            this.result_label2.Size = new System.Drawing.Size(0, 13);
+            this.result_label2.TabIndex = 6;
+            // 
+            // checkButton2
+            // 
+            this.checkButton2.Location = new System.Drawing.Point(222, 20);
+            this.checkButton2.Name = "checkButton2";
+            this.checkButton2.Size = new System.Drawing.Size(99, 23);
+            this.checkButton2.TabIndex = 5;
+            this.checkButton2.Text = "Проверить";
+            this.checkButton2.UseVisualStyleBackColor = true;
+            this.checkButton2.Click += new System.EventHandler(this.checkButton2_Click);
+            // 
+            // method_radioButton
+            // 
+            this.method_radioButton.AutoSize = true;
+            this.method_radioButton.Location = new System.Drawing.Point(116, 44);
+            this.method_radioButton.Name = "method_radioButton";
+            this.method_radioButton.Size = new System.Drawing.Size(57, 17);
+            this.method_radioButton.TabIndex = 4;
+            this.method_radioButton.TabStop = true;
+            this.method_radioButton.Text = "Метод";
+            this.method_radioButton.UseVisualStyleBackColor = true;
+            // 
+            // event_radioButton
+            // 
+            this.event_radioButton.AutoSize = true;
+            this.event_radioButton.Location = new System.Drawing.Point(116, 67);
+            this.event_radioButton.Name = "event_radioButton";
+            this.event_radioButton.Size = new System.Drawing.Size(69, 17);
+            this.event_radioButton.TabIndex = 3;
+            this.event_radioButton.TabStop = true;
+            this.event_radioButton.Text = "Событие";
+            this.event_radioButton.UseVisualStyleBackColor = true;
+            // 
+            // response_radioButton
+            // 
+            this.response_radioButton.AutoSize = true;
+            this.response_radioButton.Location = new System.Drawing.Point(10, 44);
+            this.response_radioButton.Name = "response_radioButton";
+            this.response_radioButton.Size = new System.Drawing.Size(62, 17);
+            this.response_radioButton.TabIndex = 2;
+            this.response_radioButton.TabStop = true;
+            this.response_radioButton.Text = "Отклик";
+            this.response_radioButton.UseVisualStyleBackColor = true;
+            // 
+            // property_radioButton
+            // 
+            this.property_radioButton.AutoSize = true;
+            this.property_radioButton.Location = new System.Drawing.Point(10, 67);
+            this.property_radioButton.Name = "property_radioButton";
+            this.property_radioButton.Size = new System.Drawing.Size(73, 17);
+            this.property_radioButton.TabIndex = 1;
+            this.property_radioButton.TabStop = true;
+            this.property_radioButton.Text = "Свойство";
+            this.property_radioButton.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -154,81 +224,11 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Действие, распознаваемое объектом";
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(10, 67);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(73, 17);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Свойство";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(10, 44);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(62, 17);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Отклик";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(116, 67);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(69, 17);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Событие";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(116, 44);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(57, 17);
-            this.radioButton4.TabIndex = 4;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Метод";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(222, 20);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Проверить";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // result_label1
-            // 
-            this.result_label1.AutoSize = true;
-            this.result_label1.Location = new System.Drawing.Point(223, 72);
-            this.result_label1.Name = "result_label1";
-            this.result_label1.Size = new System.Drawing.Size(0, 13);
-            this.result_label1.TabIndex = 6;
-            // 
-            // result_label2
-            // 
-            this.result_label2.AutoSize = true;
-            this.result_label2.Location = new System.Drawing.Point(222, 48);
-            this.result_label2.Name = "result_label2";
-            this.result_label2.Size = new System.Drawing.Size(0, 13);
-            this.result_label2.TabIndex = 6;
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.result_label3);
             this.groupBox3.Controls.Add(this.textBox1);
-            this.groupBox3.Controls.Add(this.button3);
+            this.groupBox3.Controls.Add(this.checkButton3);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Location = new System.Drawing.Point(13, 207);
             this.groupBox3.Name = "groupBox3";
@@ -236,6 +236,31 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Вопрос №3";
+            // 
+            // result_label3
+            // 
+            this.result_label3.AutoSize = true;
+            this.result_label3.Location = new System.Drawing.Point(225, 67);
+            this.result_label3.Name = "result_label3";
+            this.result_label3.Size = new System.Drawing.Size(0, 13);
+            this.result_label3.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(13, 37);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(172, 20);
+            this.textBox1.TabIndex = 2;
+            // 
+            // checkButton3
+            // 
+            this.checkButton3.Location = new System.Drawing.Point(225, 37);
+            this.checkButton3.Name = "checkButton3";
+            this.checkButton3.Size = new System.Drawing.Size(95, 23);
+            this.checkButton3.TabIndex = 1;
+            this.checkButton3.Text = "Проверить";
+            this.checkButton3.UseVisualStyleBackColor = true;
+            this.checkButton3.Click += new System.EventHandler(this.checkButton3_Click);
             // 
             // label3
             // 
@@ -245,31 +270,6 @@
             this.label3.Size = new System.Drawing.Size(267, 13);
             this.label3.TabIndex = 0;
             this.label3.Text = "Любой объект является экзмпляром некоторого...";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(225, 37);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 23);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Проверить";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(13, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // result_label3
-            // 
-            this.result_label3.AutoSize = true;
-            this.result_label3.Location = new System.Drawing.Point(225, 67);
-            this.result_label3.Name = "result_label3";
-            this.result_label3.Size = new System.Drawing.Size(0, 13);
-            this.result_label3.TabIndex = 3;
             // 
             // Form1
             // 
@@ -295,7 +295,7 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label result_label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button checkButton1;
         private System.Windows.Forms.CheckBox edit_checkBox;
         private System.Windows.Forms.CheckBox label_checkBox;
         private System.Windows.Forms.CheckBox panel_checkBox;
@@ -303,16 +303,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label result_label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button checkButton2;
+        private System.Windows.Forms.RadioButton method_radioButton;
+        private System.Windows.Forms.RadioButton event_radioButton;
+        private System.Windows.Forms.RadioButton response_radioButton;
+        private System.Windows.Forms.RadioButton property_radioButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label result_label3;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button checkButton3;
         private System.Windows.Forms.Label label3;
     }
 }

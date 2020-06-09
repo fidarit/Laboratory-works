@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab1", "lab2sem\lab1.csproj", "{D94059F2-D58E-48EB-8A2D-7CCCF5BFE68A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab1", "lab1\lab1.csproj", "{D94059F2-D58E-48EB-8A2D-7CCCF5BFE68A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab2_1", "lab2\lab2_1.csproj", "{6EA3D659-8650-43DC-B7DC-08FE6CE5A275}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab2_2", "lab_2_2\lab2_2.csproj", "{230EF9C4-D5B1-4996-91DA-3C5D23FE45A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab2_2", "lab2_2\lab2_2.csproj", "{230EF9C4-D5B1-4996-91DA-3C5D23FE45A5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab2_3", "lab2_3\lab2_3.csproj", "{F4D3E881-8B59-491D-BE58-D10EBF3E3E02}"
 EndProject

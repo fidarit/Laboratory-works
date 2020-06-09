@@ -10,21 +10,21 @@ namespace lab2_3
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void checkButton3_Click(object sender, EventArgs e)
         {
             result_label3.Text = textBox1.Text == "класса" ? "Верно!" : "Ошибка!";
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void checkButton2_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked || radioButton2.Checked
-                || !radioButton3.Checked || radioButton4.Checked)
+            if (property_radioButton.Checked || response_radioButton.Checked
+                || !event_radioButton.Checked || method_radioButton.Checked)
                 result_label2.Text = "Ошибка!";
             else
                 result_label2.Text = "Верно!";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void checkButton1_Click(object sender, EventArgs e)
         {
             if(!button_checkBox.Checked && !panel_checkBox.Checked
                 && label_checkBox.Checked && edit_checkBox.Checked)
